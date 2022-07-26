@@ -9,9 +9,7 @@ public class Main {
 			Locale.setDefault(Locale.US);
 			Scanner sc = new Scanner (System.in);
 			
-			double x;
-			x = sc.nextDouble();
-			System.out.printf("Voce digitou %.2f%n", x);
+			
 
 			
 			sc.close();
