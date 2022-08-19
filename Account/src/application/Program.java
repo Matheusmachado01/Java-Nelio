@@ -44,7 +44,7 @@ public class Program {
 		double withdrawValue = sc.nextDouble();
 		account.withdraw(withdrawValue);
 		System.out.println("Updated account data: ");
-		
+		System.out.println(account);
 		
 		
 		sc.close();
