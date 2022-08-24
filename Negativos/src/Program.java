@@ -8,7 +8,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Quantos números você vai digitar?");
+		System.out.print("Quantos números você vai digitar?");
 		int n = sc.nextInt();
 
 		int[] vect = new int[n];
