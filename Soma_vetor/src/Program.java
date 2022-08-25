@@ -26,19 +26,16 @@ public class Program {
 		}
 
 		media = soma / n;
-
 		System.out.println();
-		
+
 		System.out.print("VALORES = ");
-		
+
 		for (int i = 0; i < n; i++) {
 			System.out.printf("%.1f  ", vect[i]);
 		}
-		
-		System.out.printf("\nSOMA = %.1f ", soma);
-		System.out.printf("\nMEDIA = %.1f", media);
-	
-		sc.close();
+		System.out.printf("\nSOMA = %.2f\n", soma);
+		System.out.printf("MEDIA = %.2f\n", media);
+
 	}
 
 }
