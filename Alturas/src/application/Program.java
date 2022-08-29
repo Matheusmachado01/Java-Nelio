@@ -29,7 +29,7 @@ public class Program {
 
 		double soma = 0.0;
 		for (int i = 0; i < n; i++) {
-			soma = soma + alturas[i];
+			soma +=  alturas[i];
 		}
 		double mediaAlturas = soma / n;
 
@@ -39,21 +39,19 @@ public class Program {
 		int cont = 0;
 		for (int i = 0; i < n; i++) {
 			if (idades[i] < 16) {
-				cont = cont + 1;
-				
+				cont += cont ;
 			}
 		}
 		double percent = cont * 100.0 / n;
-		
+
 		System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n", percent);
-		
+
 		for (int i = 0; i < n; i++) {
-			if (idades [i] < 16 ) {
+			if (idades[i] < 16) {
 				System.out.println(nomes[i]);
 			}
 		}
-		
-		
+
 		sc.close();
 	}
 }
