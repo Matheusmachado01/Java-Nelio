@@ -18,40 +18,39 @@ public class Program {
 		double[] alturas = new double[n];
 
 		for (int i = 0; i < n; i++) {
-			System.out.println("Dados da " + (i + 1) + "a pessoa: ");
+			System.out.println("Dados da " + (i + 1) + "pessoa: ");
 			System.out.print("Nome: ");
 			nomes[i] = sc.next();
-			System.out.print("Idade: ");
+			System.out.print("Idades: ");
 			idades[i] = sc.nextInt();
-			System.out.print("Altura: ");
+			System.out.print("Alturas: ");
 			alturas[i] = sc.nextDouble();
 		}
-
 		double soma = 0.0;
 		for (int i = 0; i < n; i++) {
-			soma +=  alturas[i];
+			soma += alturas[i];
 		}
-		double mediaAlturas = soma / n;
-
 		System.out.println();
+		
+		double mediaAlturas = soma / n;
 		System.out.printf("Altura media: %.2f%n", mediaAlturas);
-
+		
 		int cont = 0;
-		for (int i = 0; i < n; i++) {
+		for(int i = 0; i < n; i++) {
 			if (idades[i] < 16) {
 				cont += cont ;
 			}
 		}
 		double percent = cont * 100.0 / n;
-
-		System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n", percent);
-
+		System.out.printf("Pessoas com menos de 16 anos: %.1f%%", percent);
+		
+		System.out.println();
 		for (int i = 0; i < n; i++) {
 			if (idades[i] < 16) {
 				System.out.println(nomes[i]);
 			}
 		}
-
+			
 		sc.close();
 	}
 }
