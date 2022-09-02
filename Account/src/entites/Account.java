@@ -7,6 +7,7 @@ public class Account {
 	private double balance;
 
 	public Account(int number, String holder) {
+
 		this.number = number;
 		this.holder = holder;
 	}
@@ -29,25 +30,26 @@ public class Account {
 		this.holder = holder;
 	}
 
+	public double getBalance() {
+		return balance;
+	}
+
 	public void deposit(double amount) {
 		balance += amount;
 	}
 
 	public void withdraw(double amount) {
 		balance -= amount + 5.0;
+
 	}
 
-	public double getBalance() {
-		return balance;
-	}
 	public String toString() {
-		return "Account "
-				+ number
-				+ ", Holder: "
-				+ holder
-				+", Balance: $ "
-				+ String.format("%.2f", balance);
-		
-		
+		return "Account " 
+				+ number 
+				+ ", Holder: " 
+				+ holder 
+				+ ", Balance: $ " 
+				+ String.format("%.2f ", balance);
+
 	}
 }
