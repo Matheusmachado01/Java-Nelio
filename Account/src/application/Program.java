@@ -40,7 +40,7 @@ public class Program {
 		System.out.println(account);
 		System.out.println();
 		
-		System.out.println("Enter a withdraw value: ");
+		System.out.print("Enter a withdraw value: ");
 		double withdrawValue = sc.nextDouble();
 		account.withdraw(withdrawValue);
 		System.out.println("Updated account data: ");
