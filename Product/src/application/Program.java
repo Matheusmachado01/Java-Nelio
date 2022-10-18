@@ -5,30 +5,47 @@ import java.util.Scanner;
 
 import entities.Product;
 
+
+
+
+
 public class Program {
 
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-
-		int n = sc.nextInt();
-		Product[] vect = new Product[n];
-
-		for (int i = 0; i < vect.length; i++) {
-			sc.nextLine();
-			String name = sc.nextLine();
-			double price = sc.nextDouble();
-			vect[i] = new Product(name, price);
-		}
-		double sum = 0.0;
-		for (int i = 0; i < vect.length; i++) {
-			sum += vect[i].getPrice();
-		}
-		double avg = sum / vect.length;
-		
-		System.out.printf("AVERAGE PRICE: %.2f%n", avg);
 	
+		Product product = new Product();
+	
+		System.out.println("Enter product data: ");
+		System.out.print("Name: ");
+		product.name = sc.nextLine();
+		System.out.print("Price: ");
+		product.price = sc.nextDouble();
+		System.out.print("Quantity: ");
+		product.quantity = sc.nextInt();
+		System.out.println();
+		
+		System.out.println("Product data: " + product);
+		System.out.println();
+		
+		System.out.print("Enter the number of products to be added in stock: ");
+		int quantity = sc.nextInt();
+		product.addProducts(quantity);
+		System.out.println();
+		
+		System.out.println("Updated data: "+ product);
+		System.out.println();
+		
+		System.out.print("Enter the number of products to be removed from stock: ");
+		quantity =  sc.nextInt();
+		product.removeProducts(quantity);
+		System.out.println();
+		
+		System.out.println("Product data: "+ product);
+		
+		
 		sc.close();
 	}
 
