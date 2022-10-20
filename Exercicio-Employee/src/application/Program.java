@@ -5,31 +5,41 @@ import java.util.Scanner;
 
 import entities.Employee;
 
+
+
+
+
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		Employee employee = new Employee();
+	
+		Employee emp = new Employee();
 		
 		System.out.print("Name: ");
-		employee.name = sc.nextLine();
+		emp.name = sc.nextLine();
 		System.out.print("Gross Salary: ");
-		employee.grossSalary = sc.nextDouble();
+		emp.grossSalary = sc.nextDouble();
 		System.out.print("Tax: ");
-		employee.tax = sc.nextDouble();
+		emp.tax = sc.nextDouble();
 		System.out.println();
 		
-		System.out.println("Employee: " + employee);
+		System.out.println("Employee"+ emp);
 		System.out.println();
-		System.out.print("Wich percentage to increase salary: ");
+		System.out.print("Which percentage to increase salary? ");
 		double percentage = sc.nextDouble();
-		employee.increaseSalary(percentage);
+		emp.increaseSalary(percentage);
 		
 		System.out.println();
-		System.out.println("Updated data " + employee);
+		System.out.println("Updated data: "+ emp);
+		
+		
+		
+		
+		
 		
 		sc.close();
 	}

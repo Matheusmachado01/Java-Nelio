@@ -15,7 +15,7 @@ public class Program {
 		Rectangle rectangle = new Rectangle();
 		
 		System.out.println("Enter rectangle widht and height: ");
-		rectangle.widht = sc.nextDouble();
+		rectangle.width = sc.nextDouble();
 		rectangle.height = sc.nextDouble();
 		
 		System.out.printf("AREA = %.2f%n", rectangle.area());
