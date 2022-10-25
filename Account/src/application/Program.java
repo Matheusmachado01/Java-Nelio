@@ -46,8 +46,7 @@ public class Program {
 		System.out.println("Updated account data: ");
 		System.out.println(account);
 		
-		
-		
+		sc.close();
 	}
 
 }
