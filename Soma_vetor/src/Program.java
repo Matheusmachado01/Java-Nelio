@@ -15,7 +15,7 @@ public class Program {
 		n = sc.nextInt();
 
 		double[] vect = new double[n];
-
+		
 		for (int i = 0; i < n; i++) {
 			System.out.print("Digite um número: ");
 			vect[i] = sc.nextDouble();
